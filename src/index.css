@@ -1,13 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #212121;
+  color: #FFF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.CircularProgressbar-trail {
+  stroke: #414141!important;
+}
+
+.Unrated .CircularProgressbar-path {
+  stroke: #FFF!important;
+}
+
+.Bronze .CircularProgressbar-path {
+  stroke: #6d4c2f!important;
+}
+
+.Silver .CircularProgressbar-path {
+  stroke: #8a9595!important;
+}
+
+.Gold .CircularProgressbar-path {
+  stroke: #c4c96d!important;
+}
+
+.Platinum .CircularProgressbar-path {
+  stroke: #c1cad4!important;
+}
+
+.Diamond .CircularProgressbar-path {
+  stroke: #91b8db!important;
+}
+
+.Onyx .CircularProgressbar-path {
+  stroke: #4a2187!important;
+}
+
+
