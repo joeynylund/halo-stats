@@ -20,7 +20,7 @@ function Home () {
         var cached_time = localStorage.getItem('reload')
         if(time > cached_time) {
             console.log('Reload all info!')
-            fetch('https://cryptum.halodotapi.com/games/hi/stats/players/Nylunddd/csrs?season=1',{
+            fetch('https://cryptum.halodotapi.com/games/hi/stats/players/Spencce2267/csrs?season=1',{
                 headers: {
                     'Authorization': 'Cryptum-Token d9hWQNMqwe6NOFyu30RsLMGQ2Lqr0QFDduDBh9RYZJZG9gR4TG5qt9ozWOp2sFJD',
                     'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ function Home () {
             .then((data) => {
                 setRanks(data.data)
                 localStorage.setItem('ranks', JSON.stringify(data.data))
-                fetch('https://cryptum.halodotapi.com/games/hi/stats/players/Nylunddd/service-record/global',{
+                fetch('https://cryptum.halodotapi.com/games/hi/stats/players/Spencce2267/service-record/global',{
                     headers: {
                         'Authorization': 'Cryptum-Token d9hWQNMqwe6NOFyu30RsLMGQ2Lqr0QFDduDBh9RYZJZG9gR4TG5qt9ozWOp2sFJD',
                         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function Home () {
                 .then((data) => {
                     setStats(data.data)
                     localStorage.setItem('stats', JSON.stringify(data.data))
-                    fetch('https://cryptum.halodotapi.com/games/hi/stats/players/Nylunddd/matches',{
+                    fetch('https://cryptum.halodotapi.com/games/hi/stats/players/Spencce2267/matches',{
                         headers: {
                             'Authorization': 'Cryptum-Token d9hWQNMqwe6NOFyu30RsLMGQ2Lqr0QFDduDBh9RYZJZG9gR4TG5qt9ozWOp2sFJD',
                             'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ function Home () {
             <Col md="3">
                 <Row style={{padding:'20px'}}>
                     <div style={{border:'1px solid #616161',borderRadius:'20px',padding:'15px 15px 0px'}}>
-                        <h1 style={{fontWeight:'800'}}>Nylunddd</h1>
+                        <h1 style={{fontWeight:'800'}}>Spence</h1>
                         <h3>Overall Stats</h3>
                         <h6>{stats.matches_played} Matches Played</h6>
                         <h6>Time Played: {stats.time_played.human}</h6>

@@ -46,4 +46,26 @@ code {
   stroke: #4a2187!important;
 }
 
+.win {
+  border-left: 5px solid green;
+}
+
+.loss {
+  border-left: 5px solid red;
+}
+
+.match {
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .center-mobile {
+    text-align: center;
+  }
+}
+
 
