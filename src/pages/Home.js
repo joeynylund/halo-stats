@@ -16,7 +16,7 @@ function Home () {
 
     useEffect(() => {
         var time = Date.now();
-        var reload = time + 300000;
+        var reload = time + 150000;
         var cached_time = localStorage.getItem('reload')
         if(time > cached_time) {
             console.log('Reload all info!')
